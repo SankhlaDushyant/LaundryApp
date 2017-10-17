@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/scanner_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.78"
+        android:text="SCAN" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:textSize="32sp"
+        android:inputType="textPersonName"
+        android:text="OR" />
+
+    <Button
+        android:id="@+id/manual_btn"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_weight="0.08"
+        android:text="Manual Entry" />
+</LinearLayout>

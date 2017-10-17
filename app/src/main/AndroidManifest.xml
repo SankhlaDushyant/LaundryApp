@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.dushyant31.laundroapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--
+           The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+           Google Maps Android API v2, but you must specify either coarse or fine
+           location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".authenticate.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InsertData" />
+        <activity android:name=".UpdateData" />
+        <activity android:name=".ReadSingleData" />
+        <activity android:name=".DeleteData" />
+        <activity android:name=".ReadAllData" />
+        <activity android:name=".QrGenerator" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".laundrodetails.OrderDetails" />
+        <activity android:name=".laundrodetails.InsertDetails" />
+        <activity android:name=".Bags.BagDetails"/>
+        <activity android:name=".authenticate.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".authenticate.ResetPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".authenticate.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Bags.ReadBags"/>
+        <activity android:name=".Deliveryapp.Driver"/>
+        <activity android:name=".Cleanerapp.Cleaner"/>
+        <activity android:name=".Washer.Washer"/>
+        <activity android:name=".Deliveryapp.Driverlaunch"/>
+        <activity android:name=".Deliveryapp.Route1"/>
+        <activity android:name=".Deliveryapp.Route2"/>
+        <activity android:name=".Deliveryapp.PickDel"/>
+        <activity android:name=".Deliveryapp.Pickup"/>
+
+
+
+
+
+    </application>
+
+</manifest>

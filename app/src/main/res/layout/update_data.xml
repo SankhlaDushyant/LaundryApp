@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/fweight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/companyname"
+        android:layout_marginTop="55dp"
+        android:hint="Final Weight(lbs)" />
+
+    <EditText
+        android:id="@+id/bagscomp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="BagsCompleted"
+        android:layout_below="@+id/fweight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/companyname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="215dp"
+        android:hint="TicketID"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/update_btn"
+        android:layout_alignBaseline="@+id/dryinsert_btn"
+        android:layout_alignBottom="@+id/dryinsert_btn"
+        android:layout_toLeftOf="@+id/scan_dry_btn"
+        android:layout_toStartOf="@+id/scan_dry_btn" />
+
+    <Button
+        android:id="@+id/dryinsert_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/washdryspin"
+        android:layout_alignStart="@+id/washdryspin"
+        android:layout_below="@+id/bagscomp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="33dp"
+        android:text="ACCEPT" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATUS"
+        android:layout_alignBottom="@+id/washdryspin"
+        android:layout_alignLeft="@+id/update_btn"
+        android:layout_alignStart="@+id/update_btn"
+        android:layout_alignTop="@+id/washdryspin" />
+
+    <Spinner
+        android:id="@+id/washdryspin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/status_arrays"
+        android:prompt="@string/Status"
+        android:layout_below="@+id/companyname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout2">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/scan_dry_btn"
+        android:layout_toEndOf="@+id/scan_dry_btn"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dryer/Washer"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/washdryspin"
+        android:layout_toStartOf="@+id/washdryspin" />
+
+    <Button
+        android:id="@+id/scan_dry_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN TICKET"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
